@@ -34,6 +34,10 @@
     margin-left: auto;
 }
 
+#menualt {
+    display: none;
+}
+
 #content {
     display: flex;
     flex-direction: column;
@@ -60,7 +64,7 @@
     margin-bottom: 5px;
 }
 
-#startbtn {
+.startbtn {
     background-color: #2222b5;
     color: #fff;
     font-weight: 500;
@@ -123,15 +127,13 @@ p#bye {
     margin-top: 15px;
 }
 
-footer {
+#footer {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 
 
     width: 100%;
-    padding: 15px;
     padding-bottom: 100px;
 }
 
@@ -148,4 +150,85 @@ footer {
     list-style-type: none;
     color: #00000085;
     margin-bottom: 5px;
+}
+
+/* Mobile-end */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    
+    #menu {
+        display: none;
+    }
+
+    #tabletimg {
+        width: 45%;
+    }
+
+    #menualt {
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menualt ul {
+        display: block;
+    }
+
+    #menualt ul li {
+        display: inline;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    #menualt ul li span {
+        font-weight: 300;
+    color: #ffffff97;
+    }
+
+    #intro {
+        max-width: 50%;
+    }
+
+    .startbtn {
+        width: 40%;
+    }
+
+    .part {
+        display: flex;
+        align-items: center;
+        margin: 15px 0;
+        justify-content: space-between;
+    }
+
+    #mediaimg {
+        width: 40%;
+        order: 2;
+        margin-top: 10px;
+    }
+
+    .aside-content {
+        max-width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #phoneimg {
+        width: 40%;
+    }
+
+    #despedida {
+        text-align: center;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+    #footer {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        padding: 15px;
+        margin: 0 7%;
+    }
+
 }
