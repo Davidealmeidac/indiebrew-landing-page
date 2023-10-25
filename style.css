@@ -8,7 +8,7 @@
 }
 
 #container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
     display: flex;
@@ -49,7 +49,7 @@
 
 #tabletimg {
     margin: auto;
-    width: 90%;
+    width: 80%;
     padding: 10px;
 }
 
@@ -92,8 +92,9 @@
 }
 
 #mediaimg {
+    display: block;
     margin: auto;
-    width: 90%;
+    width: 70%;
     padding: 10px 0;
     margin-bottom: 10px;
 }
@@ -111,7 +112,11 @@
 }
 
 #phoneimg {
-    margin: 15px 0 40px 0;
+    display: block;
+    margin: auto;
+    width: 70%;
+    padding: 10px 0;
+    margin-bottom: 10px;
 }
 
 a#signin {
@@ -134,6 +139,7 @@ p#bye {
 
 
     width: 100%;
+    padding: 15px;
     padding-bottom: 100px;
 }
 
@@ -224,11 +230,16 @@ p#bye {
         }
 
     #footer {
+        width: 100%;
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: center;
         padding: 15px;
-        margin: 0 7%;
+        margin: auto;
+    }
+
+    .fcontent {
+        display: inline-block;
     }
 
 }
