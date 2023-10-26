@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;font-family: 'DM Sans', sans-serif;
+}
+
+#su-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #d9b8c562;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 30px;
+    padding: 20px;
+    height: 15%;
+    width: 100%;
+}
+
+#back-icon {
+    margin-left: auto;
+}
+
+#su-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    padding: 25px;
+}
+
+#vantagens h1 {
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 2.1em;
+}
+
+#vantagens p {
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 30px #00000016;
+}
+
+form h2 {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+.field {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.field label {
+    display: block;
+    font-weight: 700;
+}
+
+.field input {
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #71717173;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#accept-term {
+    margin-top: 10px;
+    line-height: 1.5em;
+    font-weight: 600;
+}
+
+#accept-term span {
+    text-decoration: underline;
+    color: #2222b5;
+    font-weight: 700;
+}
+
+#iaccept {
+    border: .5px solid #7b7a7a2f;
+}
+
+.creatbtn {
+    background-color: #2222b5;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid #2222b5;
+    border-radius: 7px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 60%;
+    cursor: pointer;
+}
+
+.creatbtn a {
+    color: #fff;
+    text-decoration: none;
+}

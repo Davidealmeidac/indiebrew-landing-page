@@ -9,10 +9,11 @@
 
 #container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 #nav {
@@ -41,15 +42,17 @@
 #content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
 
     width: 100%;
-    padding: 15px;
+    padding: 25px;
 }
 
-#tabletimg {
+img#tabletimg {
+    display: block;
     margin: auto;
-    width: 80%;
+    width: 70%;
     padding: 10px;
 }
 
@@ -128,6 +131,10 @@ h3 {
     margin: 10px 0;
 }
 
+#despedida {
+    padding: 25px;
+}
+
 p#bye {
     margin-top: 15px;
 }
@@ -139,7 +146,7 @@ p#bye {
 
 
     width: 100%;
-    padding: 15px;
+    padding: 25px;
     padding-bottom: 100px;
 }
 
@@ -160,7 +167,7 @@ p#bye {
 
 /* Mobile-end */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
     
     
     #menu {
@@ -242,4 +249,47 @@ p#bye {
         display: inline-block;
     }
 
+}
+
+@media screen and (min-width: 992px) {
+
+    #container {
+        margin: auto;
+        max-width: 1000px;
+    }
+
+        .part-one {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            justify-content: space-between;
+        }
+
+        .aside-content-one {
+            max-width: 40%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #tabletimg {
+            order: 2;
+        }
+
+        #despedida {
+            display: inline-block;
+            text-align: left;
+            max-width: 40%;
+            margin: auto;
+        }
+
+        #footer {
+            width: 45%;
+        }
+
+        .aside-content-third {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 20px;
+        }            
+            
 }
