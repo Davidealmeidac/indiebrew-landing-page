@@ -32,6 +32,23 @@ header {
     margin-left: auto;
 }
 
+#back-icon a {
+    text-decoration: none;
+}
+
+#back-icon svg {
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px #00000077;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+#back-icon span {
+    display: none;
+}
+
 #su-content {
     display: flex;
     flex-direction: column;
@@ -56,8 +73,8 @@ header {
 form {
     background-color: #fff;
     border-radius: 8px;
-    padding: 25px;
-    width: 90%;
+    padding: 40px;
+    width: 85%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -71,8 +88,6 @@ form h2 {
 }
 
 .field {
-    width: 100%;
-    margin: auto;
     margin-bottom: 10px;
 }
 
@@ -122,4 +137,61 @@ form h2 {
 .creatbtn a {
     color: #fff;
     text-decoration: none;
+}
+
+@media screen and (min-width: 769px) {
+    
+    #back-icon {
+        display: table;
+        vertical-align: middle;
+    }
+
+    #back-icon svg {
+        vertical-align: middle;
+    }
+
+    #back-icon span {
+        display: table-cell;
+        color: #000;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    header {
+        margin-top: 10px;
+    }
+    
+    #su-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    #vantagens {
+        max-width: 40%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    #vantagens h1 {
+        font-size: 2.5em;
+    }
+
+    #vantagens p {
+        margin-bottom: 20px;
+    }
+
+    form {
+        max-width: 40%;
+        margin: 0;
+    }
+
+
+
 }

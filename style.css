@@ -80,6 +80,15 @@ img#tabletimg {
     cursor: pointer;
 }
 
+.startbtn {
+    color: #fff;
+}
+
+.startbtn a {
+    text-decoration: none;
+    color: #fff;
+}
+
 #startbtn span {
     font-weight: 300;
     color: #ffffff97;
